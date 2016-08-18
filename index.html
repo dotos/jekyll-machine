@@ -15,12 +15,9 @@ title: Home
       <div class="content">
         <h3><a href="{{ site.baseurl }}{{ post.url | replace_first: '/' }}">{{ post.title }}</a></h3>
         <span>{{ post.date | date: "%b %-d, %Y" }}</span>
-          {% if post.tags %}
-              •  in 
-              {% for tagitem in post.tags %}
-                &nbsp;<a href="{{ site.baseurl }}tags/#{{ tagitem[0] }}" >{{ tagitem[0] }}</a>
-              {% endfor %}
-            {% endif %}
+          {% for tagitem in post.tags %}
+            &nbsp;<a href="{{ site.baseurl }}tags/#{{ tagitem }}" >{{ tagitem }}</a>
+          {% endfor %}
         <p>{{ post.excerpt }}</p>
         <a class="button small" href="{{ site.baseurl }}{{ post.url | replace_first: '/' }}">Learn more &gt;&gt;</a>
       </div>
