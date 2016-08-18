@@ -1,0 +1,87 @@
+# Site settings
+title: Jekyll-Machine
+anthor: 
+  name: dotos
+  email: hero@xone.me
+  twitter_username: jekyllrb
+  github_username:  dotos
+lang: zh-CN
+since: 2013
+theme: 
+beian: 粤ICP备xxxxxxx号
+rss: /feed.xml
+baseurl:  # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+description: > # this means to ignore newlines until "baseurl:"
+ This is a Responsive Theme for Jekyll.
+
+# 主题颜色 red/green/blue (default:blue)
+theme_color: blue
+
+menu:
+  - name: Home
+    url:  /index.html
+  - name: Tags
+    url:  /tags/
+  - name: About
+    url:  /about/
+
+
+# 社交链接
+social:
+  - name: Github
+    url:  https://github.com/dotos
+    icon: github
+  - name: Weibo
+    url:  http://weibo.com/BingPictures
+    icon: weibo
+  - name: Email
+    url:  mailto:hero@xone.me
+    icon: envelope
+  - name: RSS
+    url:  /feed.xml
+    icon: rss
+
+
+
+
+# Build settings
+destination:        _site
+encoding:           utf-8
+timezone:           Asia/Shanghai
+#feture:             true
+permalink:          /:year/:title/
+paginate:           10
+paginate_path:      /page:num
+markdown:           kramdown
+highlighter:        rouge
+lsi:                false
+excerpt_separator:  "<!--more-->"
+incremental:        false
+
+# more config please click:http://kramdown.gettalong.org/options.html
+kramdown:
+  input:          GFM
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
+
+
+# Plugins
+whitelist: []
+gems:
+  - jekyll-paginate
+  - jekyll-mentions   # activesupport requires Ruby version >= 2.2.2
+  - jemoji
+  - jekyll-redirect-from

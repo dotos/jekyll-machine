@@ -1,0 +1,29 @@
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="{{ site.description }}">
+<meta name="author" content="{{ site.author.name }}">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.scrollex.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/skel.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/util.js" | prepend: site.baseurl }}"></script>
+<!--[if lte IE 8]><script src="{{ "/js/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
+<!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" href="./css/ie8.css" /><![endif]-->
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+{% if site.theme_color == 'red' %}
+<link rel="stylesheet" href="{{ "/css/r.css" | prepend: site.baseurl }}">
+{% elsif site.theme_color == 'green' %}
+<link rel="stylesheet" href="{{ "/css/g.css" | prepend: site.baseurl }}">
+{% else %}
+<link rel="stylesheet" href="{{ "/css/b.css" | prepend: site.baseurl }}">
+{% endif %}
+<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

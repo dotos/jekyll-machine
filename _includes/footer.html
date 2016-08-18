@@ -1,0 +1,31 @@
+<footer id="footer">
+    <div class="inner">
+        <ul class="icons">
+          {% for social in site.social %}
+          <li>
+              <a href="{{social.url}}" target="_blank" class="icon fa-{{social.icon}}">
+                  <span class="label">{{social.name}}</span>
+              </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <ul class="contact">
+            <li>12345 Somewhere Road</li>
+            <li>Nashville, TN 00000</li>
+            <li>(000) 000-0000</li>
+        </ul>
+        <ul class="links">
+            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">FAQ</a></li>
+            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Support</a></li>
+            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Terms</a></li>
+            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Contact</a></li>
+        </ul>
+        <p class="copyright">
+            {{date}}
+            {% if site.beian.size>0 %}
+              <a href='#' target="_blank">{{site.beian}}</a><br> 
+            {% endif %} 
+            {{site.anthor.name}} &copy; {% if site.since %} {{site.since}} - {% endif %} {{ 'now' | date: "%Y" }} Powered By <a href='http://jekyllrb.com' target="_blank">Jekyll</a> | Theme - <a href="https://github.com/dotos/jekyll-machine" target="_blank">Machine</a>.
+        </p>
+    </div>
+</footer>
