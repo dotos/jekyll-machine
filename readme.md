@@ -9,10 +9,10 @@ Jekyll-Machine - This is responsive theme for Jekyll .
 
 - [ ] Pagination
 - [ ] About links
-- [ ] Social links
 - [ ] Categories listing page
 - [ ] Google Analytics integration
 - [ ] Disqus integration
+- [x] Social links
 - [x] Tags listing page
 - [x] Resposive layout
 - [x] Syntax highlighting
