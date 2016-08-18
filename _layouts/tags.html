@@ -1,0 +1,27 @@
+---
+layout: base
+---
+<section id="main" class="wrapper">
+    <header>
+        <h2>{{page.title}}</h2>
+    </header>
+    <div class="inner">
+        <h2>All Tags:</h2>
+        <ul class="actions small">
+          {% for tagitem in site.tags %}
+            <li><a class="button small" href="#{{tagitem[0]}}">{{ tagitem[0] }}</a></li>
+          {% endfor %}
+        </ul>
+        <hr>
+        {% for tagitem in site.tags %}
+          <h3 id="{{ tagitem[0] }}">{{ tagitem[0] }}</h3>
+          <ol >
+            {% for post in site.posts %}
+              {% if post.tags contains tagitem[0] %}
+                <li><a href="{{ site.baseurl }}{{ post.url | replace_first: '/' }}">{{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+        {% endfor %}
+    </div>
+</section>

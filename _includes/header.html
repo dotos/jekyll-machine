@@ -1,10 +1,10 @@
 <header id="header">
-    <h1><a href="{{ "/index.html" | prepend: site.baseurl }}">{{site.title}}</a></h1><a href="#menu">Menu</a>
+    <h1><a href="{{site.baseurl}}index.html">{{site.title}}</a></h1><a href="#menu">Menu</a>
 </header>
 <nav id="menu">
     <ul class="links">
         {% for menu in site.menu %}
-        <li><a href="{{ menu.url | prepend: site.baseurl }}" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">{{menu.name}}</a></li>
+        <li><a href="{{site.baseurl}}{{ menu.url | replace_first: '/'  }}" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">{{menu.name}}</a></li>
         {% endfor %}
     </ul>
 <!--     <ul class="actions vertical">

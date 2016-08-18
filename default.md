@@ -10,7 +10,7 @@ title: "Welcome to Machine"
         </div>
         <ul class="actions vertical">
             <li><a href="{{site.social[0].url}}/jekyll-machine" target="_blank" class="button special major">Get Started</a></li>
-            <li><a href="{{ "/index.html" | prepend: site.baseurl }}" class="button major">More Info</a></li>
+            <li><a href="{{site.baseurl}}index.html" class="button major">More Info</a></li>
         </ul>
     </div>
 </section>
@@ -75,7 +75,7 @@ title: "Welcome to Machine"
     </div>
     <footer class="major">
       <ul class="actions">
-        <li><a href="{{ "/index.html" | prepend: site.baseurl }}" class="button major">More Features</a></li>
+        <li><a href="{{site.baseurl}}index.html" class="button major">More Features</a></li>
       </ul>
     </footer>
   </div>

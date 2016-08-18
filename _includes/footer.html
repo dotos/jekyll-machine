@@ -3,9 +3,15 @@
         <ul class="icons">
           {% for social in site.social %}
           <li>
+              {% if social.name =="RSS" or social.name == "feed" %}
+              <a href="{{site.baseurl}}{{social.url | replace_first: '/'}}" target="_blank" class="icon fa-{{social.icon}}">
+                  <span class="label">{{social.name}}</span>
+              </a>
+              {% else %}
               <a href="{{social.url}}" target="_blank" class="icon fa-{{social.icon}}">
                   <span class="label">{{social.name}}</span>
               </a>
+              {% endif %}
           </li>
           {% endfor %}
         </ul>
@@ -15,10 +21,10 @@
             <li>(000) 000-0000</li>
         </ul>
         <ul class="links">
-            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">FAQ</a></li>
-            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Support</a></li>
-            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Terms</a></li>
-            <li><a href="{{ "/index.html" | prepend: site.baseurl }}">Contact</a></li>
+            <li><a href="{{site.baseurl}}index.html">FAQ</a></li>
+            <li><a href="{{site.baseurl}}index.html">Support</a></li>
+            <li><a href="{{site.baseurl}}index.html">Terms</a></li>
+            <li><a href="{{site.baseurl}}index.html">Contact</a></li>
         </ul>
         <p class="copyright">
             {{date}}

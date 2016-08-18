@@ -2,11 +2,8 @@
 layout: post
 title:  "Jekyll & Liquid Cheatsheet"
 date:   2016-08-18 8:08:44 +0800
-categories: jekyll update
-tags:
-    - jekyll
-    - liquid
-figure: https://unsplash.it/100?random
+categories: [jekyll update]
+tags: [jekyll,liquid]
 ---
 
 <!--more-->

@@ -1,4 +1,5 @@
 ---
-layout: base
-title: tags
+layout: tags
+title: Tags
+permalink: /tags/
 ---
