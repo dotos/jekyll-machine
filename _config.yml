@@ -9,7 +9,7 @@ lang: zh-CN
 since: 2013
 beian: 粤ICP备xxxxxxx号
 rss: /feed.xml 
-baseurl: /jekyll-machine/  # the subpath of your site, e.g. /blog/
+baseurl: /jekyll-machine  # the subpath of your site, e.g. /blog/
 url: "https://dotos.github.io" # the base hostname & protocol for your site
 description: > # this means to ignore newlines until "baseurl:"
  This is a Responsive Theme for Jekyll.
