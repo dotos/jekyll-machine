@@ -18,7 +18,7 @@ Jekyll-Machine - This is responsive theme for Jekyll .
 - [x] Syntax highlighting
 
 ---
-### [Preview](https://dotos.github.io/jekyll-machine) | [Download](/archive/gh-pages.zip)  
+### [Preview](https://dotos.github.io/jekyll-machine) | [Download](https://github.com/dotos/jekyll-machine/archive/gh-pages.zip)  
 
 ### Install and Test
 
