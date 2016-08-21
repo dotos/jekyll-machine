@@ -20,11 +20,15 @@ theme_color: blue
 menu:
   - name: Home
     url:  /index.html
+  - name: Categories
+    url:  /categories/
   - name: Tags
     url:  /tags/
   - name: About
     url:  /about/
 
+# comments
+disqus_shortname: jekyll-machine
 
 # 社交链接
 social:

@@ -8,14 +8,14 @@ Jekyll-Machine - This is responsive theme for Jekyll .
 ### Features
 
 - [ ] Pagination
-- [ ] About links
-- [ ] Categories listing page
 - [ ] Google Analytics integration
-- [ ] Disqus integration
+- [x] About links
 - [x] Social links
-- [x] Tags listing page
 - [x] Resposive layout
-- [x] Syntax highlighting
+- [x] Tags listing page
+- [x] Disqus integration
+- [x] Syntax high lighting
+- [x] Categories listing page
 
 ---
 ### [Preview](https://dotos.github.io/jekyll-machine) | [Download](https://github.com/dotos/jekyll-machine/archive/gh-pages.zip)  

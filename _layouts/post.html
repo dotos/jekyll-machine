@@ -20,5 +20,7 @@ layout: base
     </header>
     <div class="inner">
         {{ content }}
+        <div id="disqus_thread"></div>
     </div>
 </section>
+{% if page.coments != false %}{% include disqus.html %}{% endif %}

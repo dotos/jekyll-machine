@@ -1,0 +1,28 @@
+---
+layout: base
+---
+
+<section id="main" class="wrapper">
+    <header>
+        <h2>{{page.title}}</h2>
+    </header>
+    <div class="inner">
+        <h2>All Categories:</h2>
+        <ul class="actions small">
+          {% for catitem in site.categories %}
+            <li><a class="button small" href="#{{catitem[0]}}">{{ catitem[0] }}</a></li>
+          {% endfor %}
+        </ul>
+        <hr>
+        {% for catitem in site.categories %}
+          <h3 id="{{ catitem[0] }}">{{ catitem[0] }}</h3>
+          <ol >
+            {% for post in site.posts %}
+              {% if post.categories contains catitem[0] %}
+                <li><a href="{{ site.baseurl }}{{ post.url | replace_first: '/' }}">{{ post.title }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+        {% endfor %}
+    </div>
+</section>

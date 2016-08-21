@@ -16,7 +16,7 @@
 <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
 <!--[if lte IE 8]><link rel="stylesheet" href="./css/ie8.css" /><![endif]-->
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} - {% if site.description %}{{ site.description }}{% endif %}</title>
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 {% if site.theme_color == 'red' %}
 <link rel="stylesheet" href="{{ "/css/r.css" | prepend: site.baseurl }}">
